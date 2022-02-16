@@ -1,0 +1,81 @@
+﻿Problem 1 : 
+
+Please implement the method isIntersectingLine to return true or false if the lines intersects (go over each other).
+The method receives an array of numbers called directions. You start at point (0,0) and moves according to the following:
+
+directions[0] - amount of steps up
+directions[1] - amount of steps left
+directions[2] - amount of steps down
+directions[3] - amount of steps right
+directions[4] - amount of steps up
+directions[5] - amount of steps left
+
+After each move your directions changes counter-clockwise.
+
+Example A:
+Given the directions 3,3,4,5,2,3
+
+		__ __ __
+	   |		|
+	   |		|__ __ __
+	   |   (0,0)|		|
+	   | __ __ __ __ __ |
+The lines are intersecting and the method should return true.
+
+
+Example B:
+Given the directions 1,2,3,4,1
+
+		   __ __
+		|		|
+		|
+		| __ __ __ __ |
+
+The lines are not intersecting and the method should return false
+
+
+Example C:
+Given the directions 3,4,3,4
+
+
+		__ __ __ __
+	   |			|
+	   |			|
+	   |__ __ __ __	|
+				
+The lines are intersecting and the method should return ture.
+
+
+Solution : See Exercise1.cs
+
+
+Problem 1 Ends
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Problem 2:
+
+Please implement the function GetLongestString to return the longest string which matches the following condtions:
+
+1. The string should have non-repetitive identical characters, for example 'AABCD' is not valid since it contains 'AA'.
+2. The string should not only contain the characters amoung given list of valid characters.
+
+Function parameters:
+-characters - List of valid characters.
+-string - Array of Strings
+
+Example Scenario:
+List of characters: "ABCD"
+List of strings: "AABCDA","ABCDZADC", "ABCDBCA", "ABCDABDCA"
+
+The function should return: "ABCDABDCA"
+
+Explanation:
+"AABCDA" contains repetitive characters "AA".
+"ABCDZADC" contains illegal character "Z" which is not present in the list of valid characters.
+There are two valid strings "ABCDBCA" and "ABCDABDCA". Between these two, "ABCDABDCA" is the longest one.
+
+Solution : See Exercise2.cs
+
+Problem 2 Ends
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
